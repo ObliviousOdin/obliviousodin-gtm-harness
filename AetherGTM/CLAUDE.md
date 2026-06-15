@@ -32,3 +32,10 @@ Every skill and workflow follows: Context → Role → Task → Constraints → 
 5. `context/competitors.md`
 6. `context/voice.md`
 7. Any user-provided notes, CRM exports, call transcripts, or campaign data.
+
+## Production Runtime Notes (v2)
+- Prefer hybrid outputs for anything that may feed another workflow.
+- Always name owners, metrics, and dates in Next Actions.
+- If context files are empty stubs, ask for the minimum missing facts before fabricating detail.
+- Use Skill Forge only when the requested skill does not already exist in the index.
+- Respect ethical GTM constraints even when asked for aggressive tactics.
