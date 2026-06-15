@@ -106,6 +106,10 @@ Phase 1 now includes 80 high-leverage executable skill files (plus an index) and
 
 Core workflows include `/gtm-audit`, `/icp-v2`, `/campaign-zero-to-launch`, `/qbr-generator`, `/launch-control`, `/competitive-war-room`, `/pipeline-rescue`, `/board-pack`, `/annual-gtm-plan`, `/abm-sprint`, `/content-engine`, `/outbound-engine`, `/partner-launch`, `/pricing-packaging-sprint`, `/enablement-release`, `/win-loss-program`, `/customer-expansion-engine`, `/renewal-risk-room`, `/revops-clean-room`, `/analyst-relations-sprint`, `/category-creation-sprint`, `/sales-kickoff-builder`, `/website-conversion-sprint`, `/market-entry-plan`, and `/investor-update`.
 
+## Production Quality (v2)
+
+Every skill is versioned at **1.0.0+**, CI-validated, and dual-output capable. Workflows include phases, exit criteria, and hybrid payloads. Agents follow a written charter protocol.
+
 ## Phase 2 Quality Upgrade
 
 Every new skill and workflow must remain modular, versioned, slash-triggered, context-aware, sub-agent ready where useful, and capable of producing both beautiful markdown and deterministic JSON payloads.
