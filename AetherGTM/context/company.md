@@ -1,19 +1,26 @@
-# Company Context Template
+# Company Context
 
-## Company
-- Name:
-- Website:
-- Category:
-- Stage:
-- Regions:
+> Fill this once. Keep it current. Every skill and workflow loads relevant context before execution.
 
-## Strategy
-- North-star metric:
-- Revenue targets:
-- Current GTM motion:
-- Strategic priorities:
+## Purpose
+Mission, product, stage, geography, GTM motion, ARR band, team structure.
 
-## Constraints
-- Budget:
-- Team capacity:
-- Compliance/legal notes:
+## Snapshot
+- **Last updated:** YYYY-MM-DD
+- **Owner:**
+- **Confidence:** high | medium | low
+
+## Facts
+- 
+
+## Assumptions
+- 
+
+## Open questions
+- 
+
+## Source links
+- 
+
+## Notes for agents
+Use only what is written here plus user-provided evidence. Label anything inferred as an assumption.
