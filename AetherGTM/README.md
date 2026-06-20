@@ -99,4 +99,13 @@ The Forge uses the six-layer standard, domain taxonomy, trigger naming rules, co
 
 ## Included Starter Pack
 
-Phase 1 includes 30 high-leverage skills and 8 workflows across ICP, positioning, product marketing, demand generation, sales, RevOps, customer success, partnerships, pricing, enablement, analytics, and competitive intelligence.
+Phase 1 now includes 80 high-leverage executable skill files (plus an index) and 25 executable workflows (plus an index) across ICP, positioning, product marketing, demand generation, content and SEO, ABM, sales, sales engineering, RevOps, customer success, partnerships, pricing, enablement, analytics, competitive intelligence, launch, win/loss, board reporting, and investor updates.
+
+
+## Starter Workflow Commands
+
+Core workflows include `/gtm-audit`, `/icp-v2`, `/campaign-zero-to-launch`, `/qbr-generator`, `/launch-control`, `/competitive-war-room`, `/pipeline-rescue`, `/board-pack`, `/annual-gtm-plan`, `/abm-sprint`, `/content-engine`, `/outbound-engine`, `/partner-launch`, `/pricing-packaging-sprint`, `/enablement-release`, `/win-loss-program`, `/customer-expansion-engine`, `/renewal-risk-room`, `/revops-clean-room`, `/analyst-relations-sprint`, `/category-creation-sprint`, `/sales-kickoff-builder`, `/website-conversion-sprint`, `/market-entry-plan`, and `/investor-update`.
+
+## Phase 2 Quality Upgrade
+
+Every new skill and workflow must remain modular, versioned, slash-triggered, context-aware, sub-agent ready where useful, and capable of producing both beautiful markdown and deterministic JSON payloads.
