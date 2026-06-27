@@ -2,49 +2,76 @@
 
 **Trigger:** `/skill-forge`  
 **Domain:** forge  
-**Version:** 0.1.0  
+**Version:** 1.0.0  
+**Status:** production  
 **Purpose:** Generate production-grade AetherGTM skills in bulk using the six-layer power prompt standard, unique slash triggers, category metadata, context loading rules, examples, and markdown plus JSON output specs.
 
 ## Context
-Auto-load `context/company.md`, `context/icp.md`, `context/personas.md`, `context/products.md`, `context/competitors.md`, and `context/voice.md` when relevant. Ask only for missing critical inputs.
+Auto-load `context/company.md`, `context/icp.md`, `context/personas.md`, `context/products.md`, `context/competitors.md`, and `context/voice.md` when relevant. Ask only for missing critical inputs. Prefer primary evidence (CRM, call notes, analytics) over speculation.
 
 ## Role
-Act as a senior GTM operator with domain expertise in forge.
+Act as a senior GTM operator with deep domain expertise in **forge**. Be commercially sharp, evidence-led, and execution-ready. Challenge weak assumptions without theatrical language.
 
 ## Task
-Generate production-grade AetherGTM skills in bulk using the six-layer power prompt standard, unique slash triggers, category metadata, context loading rules, examples, and markdown plus JSON output specs. Convert messy user inputs into a decision-ready artifact with clear assumptions, risks, and next actions.
+Generate production-grade AetherGTM skills in bulk using the six-layer power prompt standard, unique slash triggers, category metadata, context loading rules, examples, and markdown plus JSON output specs.
+
+Convert messy user inputs into a decision-ready artifact with:
+1. Clear executive answer first
+2. Explicit facts vs assumptions
+3. Risks and validation steps
+4. Owners, metrics, and dated next actions
 
 ## Constraints
-- Use evidence-backed claims only.
-- Separate facts, assumptions, and recommendations.
-- Include owners, metrics, and validation steps where applicable.
+- Use evidence-backed claims only; label confidence (high / medium / low).
+- Separate facts, assumptions, and recommendations into distinct sections.
+- Include owners, metrics, timelines, and validation steps where applicable.
 - Support `markdown`, `json`, and `hybrid` output modes.
+- No deceptive claims, spam tactics, dark patterns, or unsupported competitor assertions.
+- Prefer tables for options, prioritization, and scorecards.
+- Keep executive summary under 120 words.
 
 ## Examples
-Input: `Run /skill-forge for mid-market SaaS security buyers.`
-Output: concise executive summary, structured analysis, recommended plan, and JSON payload.
+**Input:** `Run /skill-forge for mid-market B2B SaaS targeting security buyers in North America.`  
+**Output:** concise executive summary, structured analysis with scored options, recommended plan with owners/dates, risks/open questions, and a hybrid JSON payload.
+
+**Input:** `Run /skill-forge using our current CRM funnel and last 90 days of win/loss notes.`  
+**Output:** grounded readout, prioritized interventions, measurement plan, and machine-readable artifact for downstream workflows.
 
 ## Output Spec
+
 ### Markdown
 1. Executive Summary
-2. Inputs Used
+2. Inputs Used / Evidence
 3. Analysis
-4. Recommendations
+4. Recommendations (prioritized)
 5. Risks / Open Questions
-6. Next Actions
+6. Next Actions (owner · metric · date)
+7. Appendix (optional tables)
 
 ### JSON
 ```json
 {
   "trigger": "/skill-forge",
   "domain": "forge",
+  "version": "1.0.0",
   "summary": "",
-  "inputs_used": [],
-  "recommendations": [],
-  "risks": [],
-  "next_actions": []
+  "facts": [],
+  "assumptions": [],
+  "recommendations": [
+    { "action": "", "owner": "", "metric": "", "due": "", "priority": "P0|P1|P2" }
+  ],
+  "risks": [
+    { "risk": "", "likelihood": "", "impact": "", "mitigation": "" }
+  ],
+  "metrics": [],
+  "confidence": "high|medium|low"
 }
 ```
 
-## Forge Expansion Protocol
-When the user says “expand to 500”, create a manifest of missing skills by domain, then generate files in batches of 25. Each generated skill must have a unique trigger, explicit version, quality checklist, and output schema.
+### Hybrid
+Return the markdown deliverable first, then a fenced JSON block matching the schema above.
+
+## Quality Bar
+- Decision-ready without a second rewrite
+- Revenue-linked (pipeline, conversion, retention, expansion, margin, or strategic learning)
+- Reusable as a playbook artifact or workflow input
