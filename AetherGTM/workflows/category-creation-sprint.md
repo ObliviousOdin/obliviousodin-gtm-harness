@@ -1,44 +1,87 @@
 # Category Creation Sprint
 
 **Trigger:** `/category-creation-sprint`  
-**Version:** 0.1.0  
-**Outcome:** Category narrative and market education sprint.
+**Type:** workflow  
+**Version:** 1.0.0  
+**Status:** production  
+**Purpose:** Run the end-to-end Category Creation Sprint GTM motion.
 
-## Context
-Load relevant files from `context/`, inspect available skill files, and select the minimum set of skills needed to complete the workflow.
+## Mission
+Orchestrate a complete GTM operating motion from intake → analysis → decision → execution plan → measurement. Load permanent context first. Invoke the right skills and specialist agents. Ship hybrid outputs.
 
-## Role
-Act as AetherGTM workflow conductor. Coordinate specialist sub-agents when work can be split by strategy, analytics, messaging, operations, or enablement.
+## Preconditions
+1. `AetherGTM/CLAUDE.md` loaded
+2. Relevant `context/*` files reviewed
+3. User goal, timebox, and constraints captured
+4. Available data sources listed (CRM, analytics, research, interviews)
 
-## Task
-Run the workflow end-to-end: intake, diagnosis, artifact creation, operating plan, measurement design, and executive-ready summary.
+## Phases
+### 1. Intake & framing
+- Clarify the decision or outcome
+- Define success metrics and non-goals
+- Identify stakeholders and owners
 
-## Constraints
-- Follow six-layer prompt discipline at every stage.
-- Stop only for missing inputs that materially affect strategic direction.
-- Include owners, timeline, decision points, and instrumentation.
-- Produce both polished markdown and a JSON-ready payload.
+### 2. Context load
+- Company, ICP, personas, products, competitors, voice
+- Pull any user-provided evidence
 
-## Skills to Consider
-- `/load-gtm-context`
-- `/gtm-prioritize`
-- `/decision-memo`
-- Domain-specific skills relevant to this workflow
+### 3. Diagnosis
+- Map current state vs target state
+- Score gaps by impact × confidence × effort
+- Surface critical risks early
 
-## Steps
-1. Intake: goals, audience, constraints, deadline, available data.
-2. Context synthesis: facts, assumptions, gaps, and risks.
-3. Workstream plan: break into research, strategy, execution, enablement, and measurement.
-4. Artifact production: generate the primary deliverables.
-5. QA: check evidence, claims, brand voice, and operational feasibility.
-6. Launch/rollout plan: owners, dates, dependencies, and enablement.
-7. Measurement: dashboard, leading indicators, lagging indicators, and review cadence.
+### 4. Design
+- Options with tradeoffs
+- Recommended path with rationale
+- Resource, timeline, and dependency model
+
+### 5. Execution plan
+- Workstreams, owners, dates
+- Enablement and messaging needs
+- Measurement plan and kill criteria
+
+### 6. Readout
+- Executive summary
+- Hybrid markdown + JSON artifact
+- Next 7/30/90 day actions
+
+## Skills commonly used
+- Core prioritization, decision memo, assumption ledger
+- Domain skills matching the motion
+- Analytics / RevOps for measurement where relevant
+
+## Agents
+Route specialist work to the matching agent charter in `agents/` when depth is required.
 
 ## Output Spec
-- Executive brief
-- Workstream artifact bundle
-- Decision log
-- RACI and timeline
-- Metrics plan
-- Risks and mitigations
-- JSON workflow payload
+### Markdown
+1. Executive Summary
+2. Framing & Success Metrics
+3. Diagnosis
+4. Recommendation
+5. Execution Plan
+6. Measurement & Risks
+7. Next Actions
+
+### JSON
+```json
+{
+  "workflow": "/category-creation-sprint",
+  "version": "1.0.0",
+  "goal": "",
+  "success_metrics": [],
+  "diagnosis": [],
+  "recommendation": "",
+  "plan": [
+    { "workstream": "", "owner": "", "deliverable": "", "due": "" }
+  ],
+  "risks": [],
+  "next_actions": []
+}
+```
+
+## Exit Criteria
+- Decision is explicit
+- Owners and dates exist
+- Metrics and validation steps are defined
+- Artifact is reusable by another agent without re-briefing
