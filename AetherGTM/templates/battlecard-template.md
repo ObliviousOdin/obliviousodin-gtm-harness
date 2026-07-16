@@ -1,13 +1,30 @@
 # Battlecard Template
 
-## Executive Summary
+**Version:** 1.0.0  
+**Status:** production
 
-## Inputs
+## Instructions
+Duplicate this template. Fill every section. Mark unknowns explicitly.
 
-## Analysis
+## Competitor snapshot
+- 
 
-## Recommendations
+## Landmines
+- 
 
-## Metrics
+## Win themes
+- 
 
-## Next Actions
+## Trap questions
+- 
+
+## Proof points
+- 
+
+## Talk track
+- 
+
+## Sign-off
+- Owner:
+- Date:
+- Confidence:
