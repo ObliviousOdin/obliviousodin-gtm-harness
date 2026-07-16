@@ -1,13 +1,33 @@
 # Launch Plan Template
 
-## Executive Summary
+**Version:** 1.0.0  
+**Status:** production
 
-## Inputs
+## Instructions
+Duplicate this template. Fill every section. Mark unknowns explicitly.
 
-## Analysis
+## Positioning
+- 
 
-## Recommendations
+## Audience
+- 
 
-## Metrics
+## Assets
+- 
 
-## Next Actions
+## Enablement
+- 
+
+## GTM motions
+- 
+
+## Success metrics
+- 
+
+## War room
+- 
+
+## Sign-off
+- Owner:
+- Date:
+- Confidence:
