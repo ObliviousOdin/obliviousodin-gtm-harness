@@ -1,0 +1,1052 @@
+{
+  "skills": [
+    {
+      "id": "README",
+      "title": "analytics skills",
+      "domain": "analytics",
+      "trigger": "/README",
+      "purpose": "",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/analytics/README.md"
+    },
+    {
+      "id": "board-metrics",
+      "title": "Board Metrics",
+      "domain": "analytics",
+      "trigger": "/board-metrics",
+      "purpose": "Create board metrics pack.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/analytics/board-metrics.md"
+    },
+    {
+      "id": "cohort-analysis",
+      "title": "Cohort Analysis",
+      "domain": "analytics",
+      "trigger": "/cohort-analysis",
+      "purpose": "Design cohort analysis for acquisition, activation, retention, and expansion.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/analytics/cohort-analysis.md"
+    },
+    {
+      "id": "exec-dashboard-spec",
+      "title": "Exec Dashboard Spec",
+      "domain": "analytics",
+      "trigger": "/exec-dashboard-spec",
+      "purpose": "Specify an executive GTM dashboard with metric definitions.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/analytics/exec-dashboard-spec.md"
+    },
+    {
+      "id": "experiment-readout",
+      "title": "Experiment Readout",
+      "domain": "analytics",
+      "trigger": "/experiment-readout",
+      "purpose": "Create experiment readout with decision and next iteration.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/analytics/experiment-readout.md"
+    },
+    {
+      "id": "kpi-tree",
+      "title": "Kpi Tree",
+      "domain": "analytics",
+      "trigger": "/kpi-tree",
+      "purpose": "Build GTM KPI tree.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/analytics/kpi-tree.md"
+    },
+    {
+      "id": "segment-performance",
+      "title": "Segment Performance",
+      "domain": "analytics",
+      "trigger": "/segment-performance",
+      "purpose": "Analyze segment performance and recommend resource allocation.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/analytics/segment-performance.md"
+    },
+    {
+      "id": "README",
+      "title": "core skills",
+      "domain": "core",
+      "trigger": "/README",
+      "purpose": "",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/core/README.md"
+    },
+    {
+      "id": "assumption-ledger",
+      "title": "Assumption Ledger",
+      "domain": "core",
+      "trigger": "/assumption-ledger",
+      "purpose": "Create and maintain a GTM assumptions, evidence, and validation ledger.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/core/assumption-ledger.md"
+    },
+    {
+      "id": "context-loader",
+      "title": "Context Loader",
+      "domain": "core",
+      "trigger": "/load-gtm-context",
+      "purpose": "Load and summarize all relevant context files.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/core/context-loader.md"
+    },
+    {
+      "id": "decision-memo",
+      "title": "Decision Memo",
+      "domain": "core",
+      "trigger": "/decision-memo",
+      "purpose": "Turn GTM ambiguity into an executive decision memo with options and tradeoffs.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/core/decision-memo.md"
+    },
+    {
+      "id": "experiment-designer",
+      "title": "Experiment Designer",
+      "domain": "core",
+      "trigger": "/experiment-design",
+      "purpose": "Design GTM experiments with hypotheses and metrics.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/core/experiment-designer.md"
+    },
+    {
+      "id": "gtm-audit",
+      "title": "Gtm Audit",
+      "domain": "core",
+      "trigger": "/gtm-audit",
+      "purpose": "Audit the GTM system and identify gaps.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/core/gtm-audit.md"
+    },
+    {
+      "id": "gtm-prioritizer",
+      "title": "Gtm Prioritizer",
+      "domain": "core",
+      "trigger": "/gtm-prioritize",
+      "purpose": "Prioritize initiatives by impact, confidence, effort, and risk.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/core/gtm-prioritizer.md"
+    },
+    {
+      "id": "north-star-metric",
+      "title": "North Star Metric",
+      "domain": "core",
+      "trigger": "/north-star-metric",
+      "purpose": "Define a GTM north-star metric and supporting input metrics.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/core/north-star-metric.md"
+    },
+    {
+      "id": "operating-cadence",
+      "title": "Operating Cadence",
+      "domain": "core",
+      "trigger": "/operating-cadence",
+      "purpose": "Design the GTM operating cadence, meetings, artifacts, and accountability loops.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/core/operating-cadence.md"
+    },
+    {
+      "id": "research-synthesis",
+      "title": "Research Synthesis",
+      "domain": "core",
+      "trigger": "/research-synthesis",
+      "purpose": "Synthesize customer, market, sales, and product research into GTM insights.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/core/research-synthesis.md"
+    },
+    {
+      "id": "risk-register",
+      "title": "Risk Register",
+      "domain": "core",
+      "trigger": "/risk-register",
+      "purpose": "Build a GTM risk register with severity, likelihood, mitigations, and owners.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/core/risk-register.md"
+    },
+    {
+      "id": "README",
+      "title": "customer-success skills",
+      "domain": "customer-success",
+      "trigger": "/README",
+      "purpose": "",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/customer-success/README.md"
+    },
+    {
+      "id": "adoption-play",
+      "title": "Adoption Play",
+      "domain": "customer-success",
+      "trigger": "/adoption-play",
+      "purpose": "Create adoption play by segment, use case, and behavior trigger.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/customer-success/adoption-play.md"
+    },
+    {
+      "id": "churn-postmortem",
+      "title": "Churn Postmortem",
+      "domain": "customer-success",
+      "trigger": "/churn-postmortem",
+      "purpose": "Run churn postmortem and identify prevention plays.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/customer-success/churn-postmortem.md"
+    },
+    {
+      "id": "expansion-play",
+      "title": "Expansion Play",
+      "domain": "customer-success",
+      "trigger": "/expansion-play",
+      "purpose": "Create expansion play.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/customer-success/expansion-play.md"
+    },
+    {
+      "id": "health-score",
+      "title": "Health Score",
+      "domain": "customer-success",
+      "trigger": "/health-score",
+      "purpose": "Define customer health scoring model.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/customer-success/health-score.md"
+    },
+    {
+      "id": "onboarding-plan",
+      "title": "Onboarding Plan",
+      "domain": "customer-success",
+      "trigger": "/onboarding-plan",
+      "purpose": "Create customer onboarding plan with milestones, owners, and success criteria.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/customer-success/onboarding-plan.md"
+    },
+    {
+      "id": "qbr-generator",
+      "title": "Qbr Generator",
+      "domain": "customer-success",
+      "trigger": "/qbr-generator",
+      "purpose": "Generate executive QBR.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/customer-success/qbr-generator.md"
+    },
+    {
+      "id": "renewal-risk-review",
+      "title": "Renewal Risk Review",
+      "domain": "customer-success",
+      "trigger": "/renewal-risk-review",
+      "purpose": "Assess renewal risk and create save plan.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/customer-success/renewal-risk-review.md"
+    },
+    {
+      "id": "voice-of-customer",
+      "title": "Voice Of Customer",
+      "domain": "customer-success",
+      "trigger": "/voice-of-customer",
+      "purpose": "Synthesize VOC inputs into themes and GTM actions.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/customer-success/voice-of-customer.md"
+    },
+    {
+      "id": "README",
+      "title": "demand-gen skills",
+      "domain": "demand-gen",
+      "trigger": "/README",
+      "purpose": "",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/demand-gen/README.md"
+    },
+    {
+      "id": "abm-play",
+      "title": "Abm Play",
+      "domain": "demand-gen",
+      "trigger": "/abm-play",
+      "purpose": "Build an account-based marketing play.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/demand-gen/abm-play.md"
+    },
+    {
+      "id": "campaign-brief",
+      "title": "Campaign Brief",
+      "domain": "demand-gen",
+      "trigger": "/campaign-brief",
+      "purpose": "Create a campaign strategy brief.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/demand-gen/campaign-brief.md"
+    },
+    {
+      "id": "content-cluster",
+      "title": "Content Cluster",
+      "domain": "demand-gen",
+      "trigger": "/content-cluster",
+      "purpose": "Design an SEO/content topic cluster.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/demand-gen/content-cluster.md"
+    },
+    {
+      "id": "event-field-plan",
+      "title": "Event Field Plan",
+      "domain": "demand-gen",
+      "trigger": "/event-field-plan",
+      "purpose": "Build an event and field marketing plan with pre/during/post plays.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/demand-gen/event-field-plan.md"
+    },
+    {
+      "id": "intent-data-play",
+      "title": "Intent Data Play",
+      "domain": "demand-gen",
+      "trigger": "/intent-data-play",
+      "purpose": "Convert intent data into account selection and coordinated plays.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/demand-gen/intent-data-play.md"
+    },
+    {
+      "id": "landing-page",
+      "title": "Landing Page",
+      "domain": "demand-gen",
+      "trigger": "/landing-page",
+      "purpose": "Draft a conversion-focused landing page.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/demand-gen/landing-page.md"
+    },
+    {
+      "id": "lead-magnet",
+      "title": "Lead Magnet",
+      "domain": "demand-gen",
+      "trigger": "/lead-magnet",
+      "purpose": "Create a high-converting lead magnet concept, outline, and promotion plan.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/demand-gen/lead-magnet.md"
+    },
+    {
+      "id": "nurture-architecture",
+      "title": "Nurture Architecture",
+      "domain": "demand-gen",
+      "trigger": "/nurture-architecture",
+      "purpose": "Design nurture streams by persona, stage, trigger, and intent.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/demand-gen/nurture-architecture.md"
+    },
+    {
+      "id": "paid-media-plan",
+      "title": "Paid Media Plan",
+      "domain": "demand-gen",
+      "trigger": "/paid-media-plan",
+      "purpose": "Create a paid media plan with audiences, offers, budget, and measurement.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/demand-gen/paid-media-plan.md"
+    },
+    {
+      "id": "webinar-engine",
+      "title": "Webinar Engine",
+      "domain": "demand-gen",
+      "trigger": "/webinar-engine",
+      "purpose": "Design a webinar program from topic to follow-up conversion path.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/demand-gen/webinar-engine.md"
+    },
+    {
+      "id": "README",
+      "title": "enablement skills",
+      "domain": "enablement",
+      "trigger": "/README",
+      "purpose": "",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/enablement/README.md"
+    },
+    {
+      "id": "battlecard-builder",
+      "title": "Battlecard Builder",
+      "domain": "enablement",
+      "trigger": "/battlecard-builder",
+      "purpose": "Build competitive battlecard.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/enablement/battlecard-builder.md"
+    },
+    {
+      "id": "call-coaching-scorecard",
+      "title": "Call Coaching Scorecard",
+      "domain": "enablement",
+      "trigger": "/call-coaching-scorecard",
+      "purpose": "Build call coaching scorecard and manager guide.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/enablement/call-coaching-scorecard.md"
+    },
+    {
+      "id": "certification-path",
+      "title": "Certification Path",
+      "domain": "enablement",
+      "trigger": "/certification-path",
+      "purpose": "Create role-based enablement certification path.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/enablement/certification-path.md"
+    },
+    {
+      "id": "enablement-plan",
+      "title": "Enablement Plan",
+      "domain": "enablement",
+      "trigger": "/enablement-plan",
+      "purpose": "Create enablement rollout plan.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/enablement/enablement-plan.md"
+    },
+    {
+      "id": "sales-playbook",
+      "title": "Sales Playbook",
+      "domain": "enablement",
+      "trigger": "/sales-playbook",
+      "purpose": "Create a sales playbook for a segment, product, or motion.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/enablement/sales-playbook.md"
+    },
+    {
+      "id": "se-discovery-kit",
+      "title": "Se Discovery Kit",
+      "domain": "enablement",
+      "trigger": "/se-discovery-kit",
+      "purpose": "Create sales engineering discovery and technical validation kit.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/enablement/se-discovery-kit.md"
+    },
+    {
+      "id": "README",
+      "title": "forge skills",
+      "domain": "forge",
+      "trigger": "/README",
+      "purpose": "",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/forge/README.md"
+    },
+    {
+      "id": "skill-forge",
+      "title": "Skill Forge",
+      "domain": "forge",
+      "trigger": "/skill-forge",
+      "purpose": "Generate production-grade AetherGTM skills in bulk using the six-layer power prompt standard, unique slash triggers, category metadata, context loading rules, examples, and markdown plus JSON output specs.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/forge/skill-forge.md"
+    },
+    {
+      "id": "README",
+      "title": "partnerships skills",
+      "domain": "partnerships",
+      "trigger": "/README",
+      "purpose": "",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/partnerships/README.md"
+    },
+    {
+      "id": "co-marketing-plan",
+      "title": "Co Marketing Plan",
+      "domain": "partnerships",
+      "trigger": "/co-marketing-plan",
+      "purpose": "Create co-marketing plan.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/partnerships/co-marketing-plan.md"
+    },
+    {
+      "id": "integration-launch",
+      "title": "Integration Launch",
+      "domain": "partnerships",
+      "trigger": "/integration-launch",
+      "purpose": "Plan an integration launch with partner co-sell and co-market motions.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/partnerships/integration-launch.md"
+    },
+    {
+      "id": "marketplace-listing",
+      "title": "Marketplace Listing",
+      "domain": "partnerships",
+      "trigger": "/marketplace-listing",
+      "purpose": "Draft marketplace listing copy and conversion plan.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/partnerships/marketplace-listing.md"
+    },
+    {
+      "id": "partner-icp",
+      "title": "Partner Icp",
+      "domain": "partnerships",
+      "trigger": "/partner-icp",
+      "purpose": "Define partner ICP.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/partnerships/partner-icp.md"
+    },
+    {
+      "id": "partner-scorecard",
+      "title": "Partner Scorecard",
+      "domain": "partnerships",
+      "trigger": "/partner-scorecard",
+      "purpose": "Create partner scorecard and tiering model.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/partnerships/partner-scorecard.md"
+    },
+    {
+      "id": "README",
+      "title": "pm-m skills",
+      "domain": "pm-m",
+      "trigger": "/README",
+      "purpose": "",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pm-m/README.md"
+    },
+    {
+      "id": "analyst-briefing",
+      "title": "Analyst Briefing",
+      "domain": "pm-m",
+      "trigger": "/analyst-briefing",
+      "purpose": "Prepare an analyst briefing narrative, agenda, and proof package.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pm-m/analyst-briefing.md"
+    },
+    {
+      "id": "category-narrative",
+      "title": "Category Narrative",
+      "domain": "pm-m",
+      "trigger": "/category-narrative",
+      "purpose": "Create a category narrative and point-of-view for market education.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pm-m/category-narrative.md"
+    },
+    {
+      "id": "customer-story-brief",
+      "title": "Customer Story Brief",
+      "domain": "pm-m",
+      "trigger": "/customer-story-brief",
+      "purpose": "Create a customer story brief with narrative arc, metrics, and approvals.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pm-m/customer-story-brief.md"
+    },
+    {
+      "id": "launch-brief",
+      "title": "Launch Brief",
+      "domain": "pm-m",
+      "trigger": "/launch-brief",
+      "purpose": "Create a launch brief.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pm-m/launch-brief.md"
+    },
+    {
+      "id": "message-house",
+      "title": "Message House",
+      "domain": "pm-m",
+      "trigger": "/message-house",
+      "purpose": "Build a message house with pillars and proof.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pm-m/message-house.md"
+    },
+    {
+      "id": "persona-pain-map",
+      "title": "Persona Pain Map",
+      "domain": "pm-m",
+      "trigger": "/persona-pain-map",
+      "purpose": "Map personas to pains and messages.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pm-m/persona-pain-map.md"
+    },
+    {
+      "id": "positioning-canvas",
+      "title": "Positioning Canvas",
+      "domain": "pm-m",
+      "trigger": "/positioning-canvas",
+      "purpose": "Create a differentiated positioning canvas.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pm-m/positioning-canvas.md"
+    },
+    {
+      "id": "proof-point-library",
+      "title": "Proof Point Library",
+      "domain": "pm-m",
+      "trigger": "/proof-point-library",
+      "purpose": "Create a claim and proof-point library for messaging governance.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pm-m/proof-point-library.md"
+    },
+    {
+      "id": "value-prop-ladder",
+      "title": "Value Prop Ladder",
+      "domain": "pm-m",
+      "trigger": "/value-prop-ladder",
+      "purpose": "Build value proposition ladders from features to business outcomes.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pm-m/value-prop-ladder.md"
+    },
+    {
+      "id": "win-loss-synthesis",
+      "title": "Win Loss Synthesis",
+      "domain": "pm-m",
+      "trigger": "/win-loss-synthesis",
+      "purpose": "Synthesize win/loss inputs into themes, actions, and messaging implications.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pm-m/win-loss-synthesis.md"
+    },
+    {
+      "id": "README",
+      "title": "pricing-packaging skills",
+      "domain": "pricing-packaging",
+      "trigger": "/README",
+      "purpose": "",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pricing-packaging/README.md"
+    },
+    {
+      "id": "discount-governance",
+      "title": "Discount Governance",
+      "domain": "pricing-packaging",
+      "trigger": "/discount-governance",
+      "purpose": "Create discount governance and approval rules.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pricing-packaging/discount-governance.md"
+    },
+    {
+      "id": "monetization-experiment",
+      "title": "Monetization Experiment",
+      "domain": "pricing-packaging",
+      "trigger": "/monetization-experiment",
+      "purpose": "Design monetization experiments with guardrails and metrics.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pricing-packaging/monetization-experiment.md"
+    },
+    {
+      "id": "packaging-options",
+      "title": "Packaging Options",
+      "domain": "pricing-packaging",
+      "trigger": "/packaging-options",
+      "purpose": "Generate packaging options.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pricing-packaging/packaging-options.md"
+    },
+    {
+      "id": "pricing-diagnostic",
+      "title": "Pricing Diagnostic",
+      "domain": "pricing-packaging",
+      "trigger": "/pricing-diagnostic",
+      "purpose": "Diagnose pricing and packaging.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pricing-packaging/pricing-diagnostic.md"
+    },
+    {
+      "id": "willingness-to-pay",
+      "title": "Willingness To Pay",
+      "domain": "pricing-packaging",
+      "trigger": "/willingness-to-pay",
+      "purpose": "Design willingness-to-pay research and synthesis.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/pricing-packaging/willingness-to-pay.md"
+    },
+    {
+      "id": "README",
+      "title": "revops skills",
+      "domain": "revops",
+      "trigger": "/README",
+      "purpose": "",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/revops/README.md"
+    },
+    {
+      "id": "attribution-review",
+      "title": "Attribution Review",
+      "domain": "revops",
+      "trigger": "/attribution-review",
+      "purpose": "Review attribution approach and identify decision-safe reporting.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/revops/attribution-review.md"
+    },
+    {
+      "id": "capacity-model",
+      "title": "Capacity Model",
+      "domain": "revops",
+      "trigger": "/capacity-model",
+      "purpose": "Create a GTM capacity model for pipeline and revenue planning.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/revops/capacity-model.md"
+    },
+    {
+      "id": "forecast-narrative",
+      "title": "Forecast Narrative",
+      "domain": "revops",
+      "trigger": "/forecast-narrative",
+      "purpose": "Create forecast narrative.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/revops/forecast-narrative.md"
+    },
+    {
+      "id": "funnel-diagnostics",
+      "title": "Funnel Diagnostics",
+      "domain": "revops",
+      "trigger": "/funnel-diagnostics",
+      "purpose": "Analyze funnel conversion bottlenecks.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/revops/funnel-diagnostics.md"
+    },
+    {
+      "id": "lead-scoring",
+      "title": "Lead Scoring",
+      "domain": "revops",
+      "trigger": "/lead-scoring",
+      "purpose": "Design a lead and account scoring model.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/revops/lead-scoring.md"
+    },
+    {
+      "id": "pipeline-inspector",
+      "title": "Pipeline Inspector",
+      "domain": "revops",
+      "trigger": "/pipeline-inspector",
+      "purpose": "Inspect pipeline quality and risk.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/revops/pipeline-inspector.md"
+    },
+    {
+      "id": "routing-rules",
+      "title": "Routing Rules",
+      "domain": "revops",
+      "trigger": "/routing-rules",
+      "purpose": "Define lead, account, and opportunity routing rules.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/revops/routing-rules.md"
+    },
+    {
+      "id": "sla-designer",
+      "title": "Sla Designer",
+      "domain": "revops",
+      "trigger": "/sla-designer",
+      "purpose": "Create marketing-sales-CS SLAs with metrics and escalation paths.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/revops/sla-designer.md"
+    },
+    {
+      "id": "territory-design",
+      "title": "Territory Design",
+      "domain": "revops",
+      "trigger": "/territory-design",
+      "purpose": "Design territories using TAM, capacity, coverage, and fairness constraints.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/revops/territory-design.md"
+    },
+    {
+      "id": "README",
+      "title": "sales-sdr-ae skills",
+      "domain": "sales-sdr-ae",
+      "trigger": "/README",
+      "purpose": "",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/sales-sdr-ae/README.md"
+    },
+    {
+      "id": "account-plan",
+      "title": "Account Plan",
+      "domain": "sales-sdr-ae",
+      "trigger": "/account-plan",
+      "purpose": "Create an enterprise account plan with stakeholders, pains, and strategy.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/sales-sdr-ae/account-plan.md"
+    },
+    {
+      "id": "deal-review",
+      "title": "Deal Review",
+      "domain": "sales-sdr-ae",
+      "trigger": "/deal-review",
+      "purpose": "Run a deal review to identify gaps, risks, next steps, and close plan.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/sales-sdr-ae/deal-review.md"
+    },
+    {
+      "id": "demo-plan",
+      "title": "Demo Plan",
+      "domain": "sales-sdr-ae",
+      "trigger": "/demo-plan",
+      "purpose": "Create a role-specific demo plan mapped to pain and proof.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/sales-sdr-ae/demo-plan.md"
+    },
+    {
+      "id": "discovery-guide",
+      "title": "Discovery Guide",
+      "domain": "sales-sdr-ae",
+      "trigger": "/discovery-guide",
+      "purpose": "Create discovery call guide.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/sales-sdr-ae/discovery-guide.md"
+    },
+    {
+      "id": "meddic-review",
+      "title": "Meddic Review",
+      "domain": "sales-sdr-ae",
+      "trigger": "/meddic-review",
+      "purpose": "Assess an opportunity using MEDDIC/MEDDPICC criteria.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/sales-sdr-ae/meddic-review.md"
+    },
+    {
+      "id": "mutual-action-plan",
+      "title": "Mutual Action Plan",
+      "domain": "sales-sdr-ae",
+      "trigger": "/map-create",
+      "purpose": "Create mutual action plan.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/sales-sdr-ae/mutual-action-plan.md"
+    },
+    {
+      "id": "negotiation-plan",
+      "title": "Negotiation Plan",
+      "domain": "sales-sdr-ae",
+      "trigger": "/negotiation-plan",
+      "purpose": "Create a negotiation plan with give-get logic and guardrails.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/sales-sdr-ae/negotiation-plan.md"
+    },
+    {
+      "id": "objection-handler",
+      "title": "Objection Handler",
+      "domain": "sales-sdr-ae",
+      "trigger": "/objection-handler",
+      "purpose": "Create objection handling talk tracks.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/sales-sdr-ae/objection-handler.md"
+    },
+    {
+      "id": "proposal-builder",
+      "title": "Proposal Builder",
+      "domain": "sales-sdr-ae",
+      "trigger": "/proposal-builder",
+      "purpose": "Build a proposal structure with business case, scope, pricing, and mutual commitments.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/sales-sdr-ae/proposal-builder.md"
+    },
+    {
+      "id": "sequence-from-signal",
+      "title": "Sequence From Signal",
+      "domain": "sales-sdr-ae",
+      "trigger": "/sequence-from-signal",
+      "purpose": "Create outbound sequence from a buying signal.",
+      "version": "1.0.0",
+      "path": "AetherGTM/skills/sales-sdr-ae/sequence-from-signal.md"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "abm-sprint",
+      "title": "Abm Sprint",
+      "trigger": "/abm-sprint",
+      "purpose": "Run the end-to-end Abm Sprint GTM motion.",
+      "path": "AetherGTM/workflows/abm-sprint.md"
+    },
+    {
+      "id": "analyst-relations-sprint",
+      "title": "Analyst Relations Sprint",
+      "trigger": "/analyst-relations-sprint",
+      "purpose": "Run the end-to-end Analyst Relations Sprint GTM motion.",
+      "path": "AetherGTM/workflows/analyst-relations-sprint.md"
+    },
+    {
+      "id": "annual-gtm-plan",
+      "title": "Annual Gtm Plan",
+      "trigger": "/annual-gtm-plan",
+      "purpose": "Run the end-to-end Annual Gtm Plan GTM motion.",
+      "path": "AetherGTM/workflows/annual-gtm-plan.md"
+    },
+    {
+      "id": "board-pack",
+      "title": "Board Pack",
+      "trigger": "/board-pack",
+      "purpose": "Run the end-to-end Board Pack GTM motion.",
+      "path": "AetherGTM/workflows/board-pack.md"
+    },
+    {
+      "id": "campaign-zero-to-launch",
+      "title": "Campaign Zero To Launch",
+      "trigger": "/campaign-zero-to-launch",
+      "purpose": "Run the end-to-end Campaign Zero To Launch GTM motion.",
+      "path": "AetherGTM/workflows/campaign-zero-to-launch.md"
+    },
+    {
+      "id": "category-creation-sprint",
+      "title": "Category Creation Sprint",
+      "trigger": "/category-creation-sprint",
+      "purpose": "Run the end-to-end Category Creation Sprint GTM motion.",
+      "path": "AetherGTM/workflows/category-creation-sprint.md"
+    },
+    {
+      "id": "competitive-war-room",
+      "title": "Competitive War Room",
+      "trigger": "/competitive-war-room",
+      "purpose": "Run the end-to-end Competitive War Room GTM motion.",
+      "path": "AetherGTM/workflows/competitive-war-room.md"
+    },
+    {
+      "id": "content-engine",
+      "title": "Content Engine",
+      "trigger": "/content-engine",
+      "purpose": "Run the end-to-end Content Engine GTM motion.",
+      "path": "AetherGTM/workflows/content-engine.md"
+    },
+    {
+      "id": "customer-expansion-engine",
+      "title": "Customer Expansion Engine",
+      "trigger": "/customer-expansion-engine",
+      "purpose": "Run the end-to-end Customer Expansion Engine GTM motion.",
+      "path": "AetherGTM/workflows/customer-expansion-engine.md"
+    },
+    {
+      "id": "enablement-release",
+      "title": "Enablement Release",
+      "trigger": "/enablement-release",
+      "purpose": "Run the end-to-end Enablement Release GTM motion.",
+      "path": "AetherGTM/workflows/enablement-release.md"
+    },
+    {
+      "id": "gtm-audit",
+      "title": "Gtm Audit",
+      "trigger": "/gtm-audit",
+      "purpose": "Run the end-to-end Gtm Audit GTM motion.",
+      "path": "AetherGTM/workflows/gtm-audit.md"
+    },
+    {
+      "id": "icp-v2",
+      "title": "Icp V2",
+      "trigger": "/icp-v2",
+      "purpose": "Run the end-to-end Icp V2 GTM motion.",
+      "path": "AetherGTM/workflows/icp-v2.md"
+    },
+    {
+      "id": "investor-update",
+      "title": "Investor Update",
+      "trigger": "/investor-update",
+      "purpose": "Run the end-to-end Investor Update GTM motion.",
+      "path": "AetherGTM/workflows/investor-update.md"
+    },
+    {
+      "id": "launch-control",
+      "title": "Launch Control",
+      "trigger": "/launch-control",
+      "purpose": "Run the end-to-end Launch Control GTM motion.",
+      "path": "AetherGTM/workflows/launch-control.md"
+    },
+    {
+      "id": "market-entry-plan",
+      "title": "Market Entry Plan",
+      "trigger": "/market-entry-plan",
+      "purpose": "Run the end-to-end Market Entry Plan GTM motion.",
+      "path": "AetherGTM/workflows/market-entry-plan.md"
+    },
+    {
+      "id": "outbound-engine",
+      "title": "Outbound Engine",
+      "trigger": "/outbound-engine",
+      "purpose": "Run the end-to-end Outbound Engine GTM motion.",
+      "path": "AetherGTM/workflows/outbound-engine.md"
+    },
+    {
+      "id": "partner-launch",
+      "title": "Partner Launch",
+      "trigger": "/partner-launch",
+      "purpose": "Run the end-to-end Partner Launch GTM motion.",
+      "path": "AetherGTM/workflows/partner-launch.md"
+    },
+    {
+      "id": "pipeline-rescue",
+      "title": "Pipeline Rescue",
+      "trigger": "/pipeline-rescue",
+      "purpose": "Run the end-to-end Pipeline Rescue GTM motion.",
+      "path": "AetherGTM/workflows/pipeline-rescue.md"
+    },
+    {
+      "id": "pricing-packaging-sprint",
+      "title": "Pricing Packaging Sprint",
+      "trigger": "/pricing-packaging-sprint",
+      "purpose": "Run the end-to-end Pricing Packaging Sprint GTM motion.",
+      "path": "AetherGTM/workflows/pricing-packaging-sprint.md"
+    },
+    {
+      "id": "qbr-generator",
+      "title": "Qbr Generator",
+      "trigger": "/qbr-generator",
+      "purpose": "Run the end-to-end Qbr Generator GTM motion.",
+      "path": "AetherGTM/workflows/qbr-generator.md"
+    },
+    {
+      "id": "renewal-risk-room",
+      "title": "Renewal Risk Room",
+      "trigger": "/renewal-risk-room",
+      "purpose": "Run the end-to-end Renewal Risk Room GTM motion.",
+      "path": "AetherGTM/workflows/renewal-risk-room.md"
+    },
+    {
+      "id": "revops-clean-room",
+      "title": "Revops Clean Room",
+      "trigger": "/revops-clean-room",
+      "purpose": "Run the end-to-end Revops Clean Room GTM motion.",
+      "path": "AetherGTM/workflows/revops-clean-room.md"
+    },
+    {
+      "id": "sales-kickoff-builder",
+      "title": "Sales Kickoff Builder",
+      "trigger": "/sales-kickoff-builder",
+      "purpose": "Run the end-to-end Sales Kickoff Builder GTM motion.",
+      "path": "AetherGTM/workflows/sales-kickoff-builder.md"
+    },
+    {
+      "id": "website-conversion-sprint",
+      "title": "Website Conversion Sprint",
+      "trigger": "/website-conversion-sprint",
+      "purpose": "Run the end-to-end Website Conversion Sprint GTM motion.",
+      "path": "AetherGTM/workflows/website-conversion-sprint.md"
+    },
+    {
+      "id": "win-loss-program",
+      "title": "Win Loss Program",
+      "trigger": "/win-loss-program",
+      "purpose": "Run the end-to-end Win Loss Program GTM motion.",
+      "path": "AetherGTM/workflows/win-loss-program.md"
+    }
+  ],
+  "agents": [
+    {
+      "id": "battlecard-builder",
+      "title": "Battlecard Builder Agent",
+      "mission": "Specialist sub-agent for AetherGTM workflows."
+    },
+    {
+      "id": "customer-expansion-architect",
+      "title": "Customer Expansion Architect Agent",
+      "mission": "Specialist sub-agent for AetherGTM workflows."
+    },
+    {
+      "id": "gtm-strategist",
+      "title": "Gtm Strategist Agent",
+      "mission": "Specialist sub-agent for AetherGTM workflows."
+    },
+    {
+      "id": "icp-detective",
+      "title": "Icp Detective Agent",
+      "mission": "Specialist sub-agent for AetherGTM workflows."
+    },
+    {
+      "id": "launch-orchestrator",
+      "title": "Launch Orchestrator Agent",
+      "mission": "Specialist sub-agent for AetherGTM workflows."
+    },
+    {
+      "id": "revops-analyst",
+      "title": "Revops Analyst Agent",
+      "mission": "Specialist sub-agent for AetherGTM workflows."
+    }
+  ],
+  "domains": [
+    "analytics",
+    "core",
+    "customer-success",
+    "demand-gen",
+    "enablement",
+    "forge",
+    "partnerships",
+    "pm-m",
+    "pricing-packaging",
+    "revops",
+    "sales-sdr-ae"
+  ],
+  "stats": {
+    "skills": 91,
+    "workflows": 25,
+    "agents": 6,
+    "domains": 11
+  },
+  "generatedAt": "2026-08-04T00:14:18.885Z"
+}
