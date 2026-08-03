@@ -6,7 +6,7 @@ function walk(dir, files = []) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, e.name);
     if (e.isDirectory()) walk(p, files);
-    else if (e.name.endsWith(".md") && !e.name.includes("INDEX")) files.push(p);
+    else if (e.name.endsWith(".md") && !e.name.includes("INDEX") && e.name !== "README.md") files.push(p);
   }
   return files;
 }
