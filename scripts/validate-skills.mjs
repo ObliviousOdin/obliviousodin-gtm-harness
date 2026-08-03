@@ -18,7 +18,7 @@ function walk(dir) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, e.name);
     if (e.isDirectory()) walk(p);
-    else if (e.name.endsWith(".md") && e.name !== "SKILL_INDEX.md") {
+    else if (e.name.endsWith(".md") && e.name !== "SKILL_INDEX.md" && e.name !== "README.md") {
       checked++;
       const raw = fs.readFileSync(p, "utf8");
       if (!/\*\*Trigger:\*\*/.test(raw)) {

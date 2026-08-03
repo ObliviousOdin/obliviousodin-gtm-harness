@@ -1,12 +1,12 @@
 # AetherGTM Skill Index
 
-Production skill library for AetherGTM. **80 skills** across **11 domains**.
+Production skill library for AetherGTM. **91 skills** across **11 domains**.
 
 Each skill follows the six-layer standard and supports markdown, JSON, and hybrid output modes.
 
 ## Domains
 
-### analytics (6)
+### analytics (7)
 
 | Skill | Trigger | Version |
 | --- | --- | --- |
@@ -15,9 +15,10 @@ Each skill follows the six-layer standard and supports markdown, JSON, and hybri
 | [Exec Dashboard Spec](./analytics/exec-dashboard-spec.md) | `/exec-dashboard-spec` | 1.0.0 |
 | [Experiment Readout](./analytics/experiment-readout.md) | `/experiment-readout` | 1.0.0 |
 | [Kpi Tree](./analytics/kpi-tree.md) | `/kpi-tree` | 1.0.0 |
+| [analytics skills](./analytics/README.md) | `/README` | 1.0.0 |
 | [Segment Performance](./analytics/segment-performance.md) | `/segment-performance` | 1.0.0 |
 
-### core (10)
+### core (11)
 
 | Skill | Trigger | Version |
 | --- | --- | --- |
@@ -29,10 +30,11 @@ Each skill follows the six-layer standard and supports markdown, JSON, and hybri
 | [Gtm Prioritizer](./core/gtm-prioritizer.md) | `/gtm-prioritize` | 1.0.0 |
 | [North Star Metric](./core/north-star-metric.md) | `/north-star-metric` | 1.0.0 |
 | [Operating Cadence](./core/operating-cadence.md) | `/operating-cadence` | 1.0.0 |
+| [core skills](./core/README.md) | `/README` | 1.0.0 |
 | [Research Synthesis](./core/research-synthesis.md) | `/research-synthesis` | 1.0.0 |
 | [Risk Register](./core/risk-register.md) | `/risk-register` | 1.0.0 |
 
-### customer-success (8)
+### customer-success (9)
 
 | Skill | Trigger | Version |
 | --- | --- | --- |
@@ -42,10 +44,11 @@ Each skill follows the six-layer standard and supports markdown, JSON, and hybri
 | [Health Score](./customer-success/health-score.md) | `/health-score` | 1.0.0 |
 | [Onboarding Plan](./customer-success/onboarding-plan.md) | `/onboarding-plan` | 1.0.0 |
 | [Qbr Generator](./customer-success/qbr-generator.md) | `/qbr-generator` | 1.0.0 |
+| [customer-success skills](./customer-success/README.md) | `/README` | 1.0.0 |
 | [Renewal Risk Review](./customer-success/renewal-risk-review.md) | `/renewal-risk-review` | 1.0.0 |
 | [Voice Of Customer](./customer-success/voice-of-customer.md) | `/voice-of-customer` | 1.0.0 |
 
-### demand-gen (10)
+### demand-gen (11)
 
 | Skill | Trigger | Version |
 | --- | --- | --- |
@@ -58,9 +61,10 @@ Each skill follows the six-layer standard and supports markdown, JSON, and hybri
 | [Lead Magnet](./demand-gen/lead-magnet.md) | `/lead-magnet` | 1.0.0 |
 | [Nurture Architecture](./demand-gen/nurture-architecture.md) | `/nurture-architecture` | 1.0.0 |
 | [Paid Media Plan](./demand-gen/paid-media-plan.md) | `/paid-media-plan` | 1.0.0 |
+| [demand-gen skills](./demand-gen/README.md) | `/README` | 1.0.0 |
 | [Webinar Engine](./demand-gen/webinar-engine.md) | `/webinar-engine` | 1.0.0 |
 
-### enablement (6)
+### enablement (7)
 
 | Skill | Trigger | Version |
 | --- | --- | --- |
@@ -68,16 +72,18 @@ Each skill follows the six-layer standard and supports markdown, JSON, and hybri
 | [Call Coaching Scorecard](./enablement/call-coaching-scorecard.md) | `/call-coaching-scorecard` | 1.0.0 |
 | [Certification Path](./enablement/certification-path.md) | `/certification-path` | 1.0.0 |
 | [Enablement Plan](./enablement/enablement-plan.md) | `/enablement-plan` | 1.0.0 |
+| [enablement skills](./enablement/README.md) | `/README` | 1.0.0 |
 | [Sales Playbook](./enablement/sales-playbook.md) | `/sales-playbook` | 1.0.0 |
 | [Se Discovery Kit](./enablement/se-discovery-kit.md) | `/se-discovery-kit` | 1.0.0 |
 
-### forge (1)
+### forge (2)
 
 | Skill | Trigger | Version |
 | --- | --- | --- |
+| [forge skills](./forge/README.md) | `/README` | 1.0.0 |
 | [Skill Forge](./forge/skill-forge.md) | `/skill-forge` | 1.0.0 |
 
-### partnerships (5)
+### partnerships (6)
 
 | Skill | Trigger | Version |
 | --- | --- | --- |
@@ -86,8 +92,9 @@ Each skill follows the six-layer standard and supports markdown, JSON, and hybri
 | [Marketplace Listing](./partnerships/marketplace-listing.md) | `/marketplace-listing` | 1.0.0 |
 | [Partner Icp](./partnerships/partner-icp.md) | `/partner-icp` | 1.0.0 |
 | [Partner Scorecard](./partnerships/partner-scorecard.md) | `/partner-scorecard` | 1.0.0 |
+| [partnerships skills](./partnerships/README.md) | `/README` | 1.0.0 |
 
-### pm-m (10)
+### pm-m (11)
 
 | Skill | Trigger | Version |
 | --- | --- | --- |
@@ -99,10 +106,11 @@ Each skill follows the six-layer standard and supports markdown, JSON, and hybri
 | [Persona Pain Map](./pm-m/persona-pain-map.md) | `/persona-pain-map` | 1.0.0 |
 | [Positioning Canvas](./pm-m/positioning-canvas.md) | `/positioning-canvas` | 1.0.0 |
 | [Proof Point Library](./pm-m/proof-point-library.md) | `/proof-point-library` | 1.0.0 |
+| [pm-m skills](./pm-m/README.md) | `/README` | 1.0.0 |
 | [Value Prop Ladder](./pm-m/value-prop-ladder.md) | `/value-prop-ladder` | 1.0.0 |
 | [Win Loss Synthesis](./pm-m/win-loss-synthesis.md) | `/win-loss-synthesis` | 1.0.0 |
 
-### pricing-packaging (5)
+### pricing-packaging (6)
 
 | Skill | Trigger | Version |
 | --- | --- | --- |
@@ -110,9 +118,10 @@ Each skill follows the six-layer standard and supports markdown, JSON, and hybri
 | [Monetization Experiment](./pricing-packaging/monetization-experiment.md) | `/monetization-experiment` | 1.0.0 |
 | [Packaging Options](./pricing-packaging/packaging-options.md) | `/packaging-options` | 1.0.0 |
 | [Pricing Diagnostic](./pricing-packaging/pricing-diagnostic.md) | `/pricing-diagnostic` | 1.0.0 |
+| [pricing-packaging skills](./pricing-packaging/README.md) | `/README` | 1.0.0 |
 | [Willingness To Pay](./pricing-packaging/willingness-to-pay.md) | `/willingness-to-pay` | 1.0.0 |
 
-### revops (9)
+### revops (10)
 
 | Skill | Trigger | Version |
 | --- | --- | --- |
@@ -122,11 +131,12 @@ Each skill follows the six-layer standard and supports markdown, JSON, and hybri
 | [Funnel Diagnostics](./revops/funnel-diagnostics.md) | `/funnel-diagnostics` | 1.0.0 |
 | [Lead Scoring](./revops/lead-scoring.md) | `/lead-scoring` | 1.0.0 |
 | [Pipeline Inspector](./revops/pipeline-inspector.md) | `/pipeline-inspector` | 1.0.0 |
+| [revops skills](./revops/README.md) | `/README` | 1.0.0 |
 | [Routing Rules](./revops/routing-rules.md) | `/routing-rules` | 1.0.0 |
 | [Sla Designer](./revops/sla-designer.md) | `/sla-designer` | 1.0.0 |
 | [Territory Design](./revops/territory-design.md) | `/territory-design` | 1.0.0 |
 
-### sales-sdr-ae (10)
+### sales-sdr-ae (11)
 
 | Skill | Trigger | Version |
 | --- | --- | --- |
@@ -139,6 +149,7 @@ Each skill follows the six-layer standard and supports markdown, JSON, and hybri
 | [Negotiation Plan](./sales-sdr-ae/negotiation-plan.md) | `/negotiation-plan` | 1.0.0 |
 | [Objection Handler](./sales-sdr-ae/objection-handler.md) | `/objection-handler` | 1.0.0 |
 | [Proposal Builder](./sales-sdr-ae/proposal-builder.md) | `/proposal-builder` | 1.0.0 |
+| [sales-sdr-ae skills](./sales-sdr-ae/README.md) | `/README` | 1.0.0 |
 | [Sequence From Signal](./sales-sdr-ae/sequence-from-signal.md) | `/sequence-from-signal` | 1.0.0 |
 
 ## Expansion
