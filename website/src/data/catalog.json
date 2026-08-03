@@ -1,15 +1,6 @@
 {
   "skills": [
     {
-      "id": "README",
-      "title": "analytics skills",
-      "domain": "analytics",
-      "trigger": "/README",
-      "purpose": "",
-      "version": "1.0.0",
-      "path": "AetherGTM/skills/analytics/README.md"
-    },
-    {
       "id": "board-metrics",
       "title": "Board Metrics",
       "domain": "analytics",
@@ -62,15 +53,6 @@
       "purpose": "Analyze segment performance and recommend resource allocation.",
       "version": "1.0.0",
       "path": "AetherGTM/skills/analytics/segment-performance.md"
-    },
-    {
-      "id": "README",
-      "title": "core skills",
-      "domain": "core",
-      "trigger": "/README",
-      "purpose": "",
-      "version": "1.0.0",
-      "path": "AetherGTM/skills/core/README.md"
     },
     {
       "id": "assumption-ledger",
@@ -163,15 +145,6 @@
       "path": "AetherGTM/skills/core/risk-register.md"
     },
     {
-      "id": "README",
-      "title": "customer-success skills",
-      "domain": "customer-success",
-      "trigger": "/README",
-      "purpose": "",
-      "version": "1.0.0",
-      "path": "AetherGTM/skills/customer-success/README.md"
-    },
-    {
       "id": "adoption-play",
       "title": "Adoption Play",
       "domain": "customer-success",
@@ -242,15 +215,6 @@
       "purpose": "Synthesize VOC inputs into themes and GTM actions.",
       "version": "1.0.0",
       "path": "AetherGTM/skills/customer-success/voice-of-customer.md"
-    },
-    {
-      "id": "README",
-      "title": "demand-gen skills",
-      "domain": "demand-gen",
-      "trigger": "/README",
-      "purpose": "",
-      "version": "1.0.0",
-      "path": "AetherGTM/skills/demand-gen/README.md"
     },
     {
       "id": "abm-play",
@@ -343,15 +307,6 @@
       "path": "AetherGTM/skills/demand-gen/webinar-engine.md"
     },
     {
-      "id": "README",
-      "title": "enablement skills",
-      "domain": "enablement",
-      "trigger": "/README",
-      "purpose": "",
-      "version": "1.0.0",
-      "path": "AetherGTM/skills/enablement/README.md"
-    },
-    {
       "id": "battlecard-builder",
       "title": "Battlecard Builder",
       "domain": "enablement",
@@ -406,15 +361,6 @@
       "path": "AetherGTM/skills/enablement/se-discovery-kit.md"
     },
     {
-      "id": "README",
-      "title": "forge skills",
-      "domain": "forge",
-      "trigger": "/README",
-      "purpose": "",
-      "version": "1.0.0",
-      "path": "AetherGTM/skills/forge/README.md"
-    },
-    {
       "id": "skill-forge",
       "title": "Skill Forge",
       "domain": "forge",
@@ -422,15 +368,6 @@
       "purpose": "Generate production-grade AetherGTM skills in bulk using the six-layer power prompt standard, unique slash triggers, category metadata, context loading rules, examples, and markdown plus JSON output specs.",
       "version": "1.0.0",
       "path": "AetherGTM/skills/forge/skill-forge.md"
-    },
-    {
-      "id": "README",
-      "title": "partnerships skills",
-      "domain": "partnerships",
-      "trigger": "/README",
-      "purpose": "",
-      "version": "1.0.0",
-      "path": "AetherGTM/skills/partnerships/README.md"
     },
     {
       "id": "co-marketing-plan",
@@ -476,15 +413,6 @@
       "purpose": "Create partner scorecard and tiering model.",
       "version": "1.0.0",
       "path": "AetherGTM/skills/partnerships/partner-scorecard.md"
-    },
-    {
-      "id": "README",
-      "title": "pm-m skills",
-      "domain": "pm-m",
-      "trigger": "/README",
-      "purpose": "",
-      "version": "1.0.0",
-      "path": "AetherGTM/skills/pm-m/README.md"
     },
     {
       "id": "analyst-briefing",
@@ -577,15 +505,6 @@
       "path": "AetherGTM/skills/pm-m/win-loss-synthesis.md"
     },
     {
-      "id": "README",
-      "title": "pricing-packaging skills",
-      "domain": "pricing-packaging",
-      "trigger": "/README",
-      "purpose": "",
-      "version": "1.0.0",
-      "path": "AetherGTM/skills/pricing-packaging/README.md"
-    },
-    {
       "id": "discount-governance",
       "title": "Discount Governance",
       "domain": "pricing-packaging",
@@ -629,15 +548,6 @@
       "purpose": "Design willingness-to-pay research and synthesis.",
       "version": "1.0.0",
       "path": "AetherGTM/skills/pricing-packaging/willingness-to-pay.md"
-    },
-    {
-      "id": "README",
-      "title": "revops skills",
-      "domain": "revops",
-      "trigger": "/README",
-      "purpose": "",
-      "version": "1.0.0",
-      "path": "AetherGTM/skills/revops/README.md"
     },
     {
       "id": "attribution-review",
@@ -719,15 +629,6 @@
       "purpose": "Design territories using TAM, capacity, coverage, and fairness constraints.",
       "version": "1.0.0",
       "path": "AetherGTM/skills/revops/territory-design.md"
-    },
-    {
-      "id": "README",
-      "title": "sales-sdr-ae skills",
-      "domain": "sales-sdr-ae",
-      "trigger": "/README",
-      "purpose": "",
-      "version": "1.0.0",
-      "path": "AetherGTM/skills/sales-sdr-ae/README.md"
     },
     {
       "id": "account-plan",
@@ -1043,10 +944,10 @@
     "sales-sdr-ae"
   ],
   "stats": {
-    "skills": 91,
+    "skills": 80,
     "workflows": 25,
     "agents": 6,
     "domains": 11
   },
-  "generatedAt": "2026-08-04T00:14:28.032Z"
+  "generatedAt": "2026-08-04T00:14:33.736Z"
 }
