@@ -1,13 +1,30 @@
-# Qbr Template
+# QBR Template
 
-## Executive Summary
+**Version:** 1.0.0  
+**Status:** production
 
-## Inputs
+## Instructions
+Duplicate this template. Fill every section. Mark unknowns explicitly.
 
-## Analysis
+## Account health
+- 
 
-## Recommendations
+## Outcomes delivered
+- 
 
-## Metrics
+## Adoption
+- 
 
-## Next Actions
+## Expansion thesis
+- 
+
+## Risks
+- 
+
+## Mutual plan
+- 
+
+## Sign-off
+- Owner:
+- Date:
+- Confidence:

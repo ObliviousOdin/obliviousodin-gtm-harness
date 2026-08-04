@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main, production/**]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate skills
+        run: node scripts/validate-skills.mjs
+      - name: Generate catalog
+        run: node scripts/generate-catalog.mjs
+      - name: Ensure catalog is committed
+        run: |
+          git diff --exit-code AetherGTM/docs/catalog.json || (
+            echo "catalog.json out of date — run npm run catalog" && exit 1
+          )

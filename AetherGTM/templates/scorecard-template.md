@@ -1,13 +1,30 @@
 # Scorecard Template
 
-## Executive Summary
+**Version:** 1.0.0  
+**Status:** production
 
-## Inputs
+## Instructions
+Duplicate this template. Fill every section. Mark unknowns explicitly.
 
-## Analysis
+## Criteria
+- 
 
-## Recommendations
+## Weights
+- 
 
-## Metrics
+## Scoring guide
+- 
 
-## Next Actions
+## Thresholds
+- 
+
+## Owners
+- 
+
+## Review cadence
+- 
+
+## Sign-off
+- Owner:
+- Date:
+- Confidence:

@@ -1,13 +1,36 @@
 # Campaign Brief Template
 
-## Executive Summary
+**Version:** 1.0.0  
+**Status:** production
 
-## Inputs
+## Instructions
+Duplicate this template. Fill every section. Mark unknowns explicitly.
 
-## Analysis
+## Objective
+- 
 
-## Recommendations
+## Audience
+- 
 
-## Metrics
+## Offer
+- 
 
-## Next Actions
+## Channels
+- 
+
+## Budget
+- 
+
+## KPIs
+- 
+
+## Timeline
+- 
+
+## Risks
+- 
+
+## Sign-off
+- Owner:
+- Date:
+- Confidence:

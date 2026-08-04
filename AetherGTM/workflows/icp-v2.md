@@ -1,35 +1,87 @@
 # Icp V2
 
 **Trigger:** `/icp-v2`  
-**Version:** 0.1.0  
-**Outcome:** Rebuild ICP and segmentation
+**Type:** workflow  
+**Version:** 1.0.0  
+**Status:** production  
+**Purpose:** Run the end-to-end Icp V2 GTM motion.
 
-## Context
-Load all relevant files from `context/`, then select skills from `skills/` required for the workflow.
+## Mission
+Orchestrate a complete GTM operating motion from intake → analysis → decision → execution plan → measurement. Load permanent context first. Invoke the right skills and specialist agents. Ship hybrid outputs.
 
-## Role
-Act as workflow conductor and coordinate specialist sub-agents when useful.
+## Preconditions
+1. `AetherGTM/CLAUDE.md` loaded
+2. Relevant `context/*` files reviewed
+3. User goal, timebox, and constraints captured
+4. Available data sources listed (CRM, analytics, research, interviews)
 
-## Task
-Execute the workflow from intake to final deliverable, producing decision-ready artifacts and an implementation plan.
+## Phases
+### 1. Intake & framing
+- Clarify the decision or outcome
+- Define success metrics and non-goals
+- Identify stakeholders and owners
 
-## Constraints
-- Make assumptions explicit.
-- Use staged checkpoints.
-- Produce markdown and JSON-ready outputs.
-- Include metrics, owners, timeline, and risks.
+### 2. Context load
+- Company, ICP, personas, products, competitors, voice
+- Pull any user-provided evidence
 
-## Steps
-1. Intake and context summary.
-2. Diagnose current state.
-3. Generate strategy options.
-4. Select recommended operating path with rationale.
-5. Produce final artifacts.
-6. Define implementation plan and measurement cadence.
+### 3. Diagnosis
+- Map current state vs target state
+- Score gaps by impact × confidence × effort
+- Surface critical risks early
+
+### 4. Design
+- Options with tradeoffs
+- Recommended path with rationale
+- Resource, timeline, and dependency model
+
+### 5. Execution plan
+- Workstreams, owners, dates
+- Enablement and messaging needs
+- Measurement plan and kill criteria
+
+### 6. Readout
+- Executive summary
+- Hybrid markdown + JSON artifact
+- Next 7/30/90 day actions
+
+## Skills commonly used
+- Core prioritization, decision memo, assumption ledger
+- Domain skills matching the motion
+- Analytics / RevOps for measurement where relevant
+
+## Agents
+Route specialist work to the matching agent charter in `agents/` when depth is required.
 
 ## Output Spec
-- Executive brief
-- Artifact bundle
-- Decision log
-- 30/60/90-day plan
-- JSON workflow payload
+### Markdown
+1. Executive Summary
+2. Framing & Success Metrics
+3. Diagnosis
+4. Recommendation
+5. Execution Plan
+6. Measurement & Risks
+7. Next Actions
+
+### JSON
+```json
+{
+  "workflow": "/icp-v2",
+  "version": "1.0.0",
+  "goal": "",
+  "success_metrics": [],
+  "diagnosis": [],
+  "recommendation": "",
+  "plan": [
+    { "workstream": "", "owner": "", "deliverable": "", "due": "" }
+  ],
+  "risks": [],
+  "next_actions": []
+}
+```
+
+## Exit Criteria
+- Decision is explicit
+- Owners and dates exist
+- Metrics and validation steps are defined
+- Artifact is reusable by another agent without re-briefing

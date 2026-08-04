@@ -1,0 +1,34 @@
+{
+  "name": "obliviousodin-gtm-harness",
+  "version": "2.0.0",
+  "private": true,
+  "description": "AetherGTM — Odin's ever-learning GTM agent harness by ObliviousOdin",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-skills.mjs",
+    "catalog": "node scripts/generate-catalog.mjs",
+    "index:skills": "node scripts/generate-skill-index.mjs",
+    "check": "npm run validate && npm run catalog",
+    "website:dev": "npm --prefix website run dev",
+    "website:build": "npm --prefix website run build",
+    "website:typecheck": "npm --prefix website run typecheck"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ObliviousOdin/obliviousodin-gtm-harness.git"
+  },
+  "license": "MIT",
+  "author": "ObliviousOdin",
+  "keywords": [
+    "gtm",
+    "go-to-market",
+    "ai-agents",
+    "claude",
+    "cursor",
+    "playbooks",
+    "aethergtm"
+  ]
+}
