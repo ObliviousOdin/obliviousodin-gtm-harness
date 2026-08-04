@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AetherGTM — Odin's Ever-Learning GTM Agent Harness</title>
+  <meta name="description" content="Production-grade Go-To-Market operating system: 80+ skills, 25 workflows, specialist agents, and permanent company context for any agentic coding environment." />
+  <meta name="theme-color" content="#070708" />
+  <meta property="og:title" content="AetherGTM — GTM Agent Harness by ObliviousOdin" />
+  <meta property="og:description" content="The ultimate AI-powered Go-To-Market framework. Skills, workflows, agents, and forever context." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #070708;
+      --bg-elevated: #0f0f12;
+      --bg-subtle: #16161b;
+      --bg-panel: #1a1a21;
+      --fg: #f2f2f4;
+      --fg-muted: #9b9ba6;
+      --fg-subtle: #6b6b76;
+      --border: #26262f;
+      --border-strong: #3a3a46;
+      --accent-bright: #c5ccd9;
+      --signal: #5eead4;
+      --signal-dim: #2dd4bf;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-2xl: 32px;
+      --font-display: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+      --font-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+      --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; color-scheme: dark; }
+    body {
+      min-height: 100dvh;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, .btn { cursor: pointer; font-family: inherit; }
+    .display { font-family: var(--font-display); letter-spacing: -0.03em; line-height: 1.08; }
+    .wrap { width: min(1120px, calc(100% - 2rem)); margin-inline: auto; }
+    header {
+      position: sticky; top: 0; z-index: 50;
+      border-bottom: 1px solid color-mix(in oklab, var(--fg) 10%, transparent);
+      background: color-mix(in oklab, var(--bg) 80%, transparent);
+      backdrop-filter: blur(16px);
+    }
+    .nav { height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { display: flex; align-items: center; gap: 0.65rem; }
+    .mark {
+      width: 32px; height: 32px; display: grid; place-items: center;
+      border-radius: var(--radius-sm); border: 1px solid var(--border);
+      background: var(--bg-elevated); font-family: var(--font-mono); font-size: 12px; color: var(--signal);
+    }
+    .brand strong { display: block; font-family: var(--font-display); font-size: 0.9rem; font-weight: 600; }
+    .brand span { display: block; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fg-subtle); }
+    .nav-links { display: none; gap: 0.25rem; }
+    .nav-links a { padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--fg-muted); transition: 0.15s ease; }
+    .nav-links a:hover { color: var(--fg); background: var(--bg-elevated); }
+    .nav-actions { display: flex; gap: 0.5rem; align-items: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+      height: 40px; padding: 0 1rem; border-radius: var(--radius-sm);
+      font-size: 0.875rem; font-weight: 500; border: 1px solid transparent; transition: 0.15s ease;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn-signal {
+      background: var(--signal); color: #070708; font-weight: 600;
+      box-shadow: 0 0 80px -20px color-mix(in oklab, var(--signal) 35%, transparent);
+    }
+    .btn-signal:hover { background: var(--signal-dim); }
+    .btn-outline { background: transparent; border-color: var(--border); color: var(--fg); }
+    .btn-outline:hover { border-color: var(--border-strong); background: var(--bg-elevated); }
+    .btn-lg { height: 48px; padding: 0 1.5rem; font-size: 1rem; border-radius: var(--radius-md); }
+    .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--border); padding: 4rem 0 5rem; }
+    .grid-noise {
+      pointer-events: none; position: absolute; inset: 0;
+      background-image:
+        linear-gradient(to right, color-mix(in oklab, var(--fg) 4%, transparent) 1px, transparent 1px),
+        linear-gradient(to bottom, color-mix(in oklab, var(--fg) 4%, transparent) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse 70% 60% at 50% 20%, black 20%, transparent 75%);
+      opacity: 0.7;
+    }
+    .glow {
+      pointer-events: none; position: absolute; top: -6rem; left: 50%; transform: translateX(-50%);
+      width: 720px; height: 420px; border-radius: 999px;
+      background: color-mix(in oklab, var(--signal) 10%, transparent); filter: blur(64px);
+    }
+    .badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+    .badge {
+      display: inline-flex; align-items: center; border-radius: 999px; border: 1px solid var(--border-strong);
+      padding: 0.2rem 0.65rem; font-size: 0.75rem; font-weight: 500; color: var(--fg-muted);
+    }
+    .badge-signal {
+      border-color: color-mix(in oklab, var(--signal) 30%, transparent);
+      background: color-mix(in oklab, var(--signal) 10%, transparent); color: var(--signal);
+    }
+    .badge-bright {
+      border-color: transparent;
+      background: color-mix(in oklab, var(--accent-bright) 10%, transparent); color: var(--accent-bright);
+    }
+    h1 { max-width: 18ch; font-size: clamp(2.25rem, 5vw, 4.25rem); font-weight: 600; text-wrap: balance; }
+    .lead { margin-top: 1.5rem; max-width: 42rem; font-size: 1.125rem; color: var(--fg-muted); line-height: 1.65; }
+    .cta-row { margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .stats { margin-top: 3.5rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .stat {
+      border: 1px solid color-mix(in oklab, var(--fg) 10%, transparent); border-radius: var(--radius-lg);
+      background: linear-gradient(180deg, var(--bg-elevated), var(--bg-subtle)); padding: 1.25rem 1rem;
+    }
+    .stat strong { display: block; font-family: var(--font-display); font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 600; }
+    .stat span { display: block; margin-top: 0.25rem; font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--fg-subtle); }
+    section { padding: 5rem 0; }
+    section.alt { border-block: 1px solid var(--border); background: var(--bg-elevated); }
+    .section-head { margin-bottom: 2.5rem; max-width: 40rem; }
+    .eyebrow { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--signal); margin-bottom: 0.75rem; }
+    h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 600; text-wrap: balance; margin-bottom: 0.75rem; }
+    .section-head p { color: var(--fg-muted); }
+    .grid-4 { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+    .card {
+      border: 1px solid color-mix(in oklab, var(--fg) 10%, transparent); border-radius: var(--radius-xl);
+      background: linear-gradient(180deg, var(--bg-elevated), var(--bg-subtle)); padding: 1.5rem;
+    }
+    .icon {
+      width: 40px; height: 40px; display: grid; place-items: center; border-radius: var(--radius-sm);
+      border: 1px solid var(--border); background: var(--bg); color: var(--signal); margin-bottom: 1rem;
+    }
+    .card h3 { font-family: var(--font-display); font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .card p { font-size: 0.9rem; color: var(--fg-muted); line-height: 1.6; }
+    .domain-grid { display: grid; gap: 0.75rem; grid-template-columns: 1fr; }
+    .domain {
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      padding: 1rem 1.25rem; border-radius: var(--radius-lg);
+      border: 1px solid color-mix(in oklab, var(--fg) 10%, transparent);
+      background: linear-gradient(180deg, var(--bg-elevated), var(--bg-subtle));
+    }
+    .domain strong { display: block; font-weight: 500; }
+    .domain span { display: block; margin-top: 0.2rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--fg-subtle); }
+    .steps { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+    .step-top { display: flex; align-items: center; justify-content: space-between; }
+    .step-num { font-family: var(--font-mono); font-size: 0.75rem; color: var(--signal); }
+    pre {
+      font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.6; color: var(--fg-muted);
+      background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 1.25rem; overflow-x: auto; white-space: pre-wrap;
+    }
+    .commands { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .cmd {
+      border-radius: 999px; border: 1px solid var(--border); background: var(--bg-elevated);
+      padding: 0.4rem 0.8rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--signal);
+    }
+    .cta-panel {
+      position: relative; overflow: hidden;
+      border: 1px solid color-mix(in oklab, var(--fg) 10%, transparent); border-radius: var(--radius-2xl);
+      background: linear-gradient(180deg, var(--bg-elevated), var(--bg-subtle)); padding: 3rem 1.5rem;
+    }
+    .cta-panel .glow-sm {
+      position: absolute; right: -4rem; top: 0; width: 14rem; height: 14rem; border-radius: 999px;
+      background: color-mix(in oklab, var(--signal) 15%, transparent); filter: blur(48px); pointer-events: none;
+    }
+    .cta-panel > * { position: relative; }
+    footer { border-top: 1px solid var(--border); background: var(--bg-elevated); padding: 3.5rem 0 0; }
+    .footer-grid { display: grid; gap: 2.5rem; grid-template-columns: 1fr; padding-bottom: 3rem; }
+    .footer-brand p { margin-top: 0.75rem; max-width: 28rem; font-size: 0.9rem; color: var(--fg-muted); }
+    .footer-meta { margin-top: 1rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--fg-subtle); }
+    .footer-col h4 { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--fg-subtle); margin-bottom: 0.75rem; }
+    .footer-col a { display: block; font-size: 0.9rem; color: var(--fg-muted); padding: 0.25rem 0; }
+    .footer-col a:hover { color: var(--fg); }
+    .footer-bottom {
+      border-top: 1px solid var(--border); padding: 1.25rem 0; display: flex;
+      flex-direction: column; gap: 0.5rem; font-size: 0.75rem; color: var(--fg-subtle);
+    }
+    .footer-bottom span:last-child { font-family: var(--font-mono); }
+    @media (min-width: 640px) {
+      .stats { grid-template-columns: repeat(4, 1fr); }
+      .grid-4 { grid-template-columns: repeat(2, 1fr); }
+      .domain-grid { grid-template-columns: repeat(2, 1fr); }
+      .steps { grid-template-columns: repeat(3, 1fr); }
+      .cta-panel { padding: 4rem 3rem; }
+      .footer-bottom { flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+    @media (min-width: 900px) {
+      .nav-links { display: flex; }
+      .grid-4 { grid-template-columns: repeat(4, 1fr); }
+      .domain-grid { grid-template-columns: repeat(3, 1fr); }
+      .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+      .hero { padding: 6rem 0 7rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#">
+        <div class="mark">Æ</div>
+        <div><strong>AetherGTM</strong><span>ObliviousOdin</span></div>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#why">Why</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#start">Quick start</a>
+        <a href="#commands">Commands</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-outline" href="https://github.com/ObliviousOdin/obliviousodin-gtm-harness" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn btn-signal" href="#start">Get started</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="grid-noise" aria-hidden="true"></div>
+      <div class="glow" aria-hidden="true"></div>
+      <div class="wrap" style="position:relative">
+        <div class="badges">
+          <span class="badge badge-signal">Ever-learning GTM harness</span>
+          <span class="badge">Production v2</span>
+          <span class="badge badge-bright">ObliviousOdin</span>
+        </div>
+        <h1 class="display">The GTM operating system your agents actually execute.</h1>
+        <p class="lead">AetherGTM is Odin’s AI-powered Go-To-Market framework — modular skills, slash-command workflows, specialist sub-agents, and forever company context. Built for Claude, Cursor, Hermes, OpenClaw, and every serious agentic stack.</p>
+        <div class="cta-row">
+          <a class="btn btn-signal btn-lg" href="#start">Deploy the harness →</a>
+          <a class="btn btn-outline btn-lg" href="https://github.com/ObliviousOdin/obliviousodin-gtm-harness" target="_blank" rel="noreferrer">View on GitHub</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>80</strong><span>Skills</span></div>
+          <div class="stat"><strong>25</strong><span>Workflows</span></div>
+          <div class="stat"><strong>6</strong><span>Agents</span></div>
+          <div class="stat"><strong>11</strong><span>Domains</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="why">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Why AetherGTM</div>
+          <h2 class="display">Not another prompt dump. A revenue operating system.</h2>
+          <p>Context-first execution, evidence over vibes, modular excellence, and outputs that survive board meetings.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card"><div class="icon">≡</div><h3>Six-layer skills</h3><p>Every skill is Context → Role → Task → Constraints → Examples → Output Spec — markdown, JSON, or hybrid.</p></article>
+          <article class="card"><div class="icon">↗</div><h3>Slash workflows</h3><p>End-to-end motions from GTM audit to board packs, launches, pipeline rescue, and investor updates.</p></article>
+          <article class="card"><div class="icon">◉</div><h3>Specialist agents</h3><p>Strategist, ICP detective, launch orchestrator, RevOps analyst, and expansion architects on call.</p></article>
+          <article class="card"><div class="icon">◎</div><h3>Permanent context</h3><p>Company, ICP, personas, products, competitors, and voice load before every deliverable.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="alt" id="coverage">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Coverage</div>
+          <h2 class="display">Eleven domains. Full GTM stack.</h2>
+          <p>From core strategy and product marketing through demand gen, sales, RevOps, CS, partnerships, pricing, enablement, analytics, and the Skill Forge.</p>
+        </div>
+        <div class="domain-grid">
+          <div class="domain"><div><strong>Core Strategy</strong><span>10 production skills</span></div></div>
+          <div class="domain"><div><strong>Product Marketing</strong><span>10 production skills</span></div></div>
+          <div class="domain"><div><strong>Demand Gen</strong><span>10 production skills</span></div></div>
+          <div class="domain"><div><strong>Sales / SDR / AE</strong><span>10 production skills</span></div></div>
+          <div class="domain"><div><strong>RevOps</strong><span>9 production skills</span></div></div>
+          <div class="domain"><div><strong>Customer Success</strong><span>8 production skills</span></div></div>
+          <div class="domain"><div><strong>Partnerships</strong><span>5 production skills</span></div></div>
+          <div class="domain"><div><strong>Pricing & Packaging</strong><span>5 production skills</span></div></div>
+          <div class="domain"><div><strong>Enablement</strong><span>6 production skills</span></div></div>
+          <div class="domain"><div><strong>Analytics</strong><span>6 production skills</span></div></div>
+          <div class="domain"><div><strong>Skill Forge</strong><span>1 production skill</span></div></div>
+        </div>
+      </div>
+    </section>
+    <section id="start">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Activation</div>
+          <h2 class="display">Three steps to a living GTM system.</h2>
+        </div>
+        <div class="steps">
+          <article class="card"><div class="step-top"><span class="step-num">01</span></div><h3 style="margin-top:1.5rem">Drop in AetherGTM</h3><p>Clone the harness, point your agent at CLAUDE.md, and keep the folder in project context.</p></article>
+          <article class="card"><div class="step-top"><span class="step-num">02</span></div><h3 style="margin-top:1.5rem">Fill permanent context</h3><p>Company, ICP, personas, products, competitors, voice — once, then every skill inherits it.</p></article>
+          <article class="card"><div class="step-top"><span class="step-num">03</span></div><h3 style="margin-top:1.5rem">Run slash workflows</h3><p>Invoke /gtm-audit, /icp-v2, /launch-control, /board-pack and ship decision-ready artifacts.</p></article>
+        </div>
+        <div style="margin-top:2.5rem">
+          <div class="eyebrow" style="margin-bottom:0.75rem">Clone</div>
+          <pre>git clone https://github.com/ObliviousOdin/obliviousodin-gtm-harness.git
+cd obliviousodin-gtm-harness</pre>
+        </div>
+        <div style="margin-top:1.25rem">
+          <div class="eyebrow" style="margin-bottom:0.75rem">Activation prompt</div>
+          <pre>Load AetherGTM/CLAUDE.md, then use AetherGTM as the operating system
+for all GTM work. Auto-load relevant files from AetherGTM/context
+before running any skill or workflow.</pre>
+        </div>
+      </div>
+    </section>
+    <section class="alt" id="commands">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Starter workflows</div>
+          <h2 class="display">Slash commands that ship revenue work.</h2>
+          <p>Twenty-five end-to-end motions. Here are the ones teams reach for first.</p>
+        </div>
+        <div class="commands">
+          <span class="cmd">/gtm-audit</span>
+          <span class="cmd">/icp-v2</span>
+          <span class="cmd">/campaign-zero-to-launch</span>
+          <span class="cmd">/launch-control</span>
+          <span class="cmd">/competitive-war-room</span>
+          <span class="cmd">/pipeline-rescue</span>
+          <span class="cmd">/board-pack</span>
+          <span class="cmd">/annual-gtm-plan</span>
+          <span class="cmd">/abm-sprint</span>
+          <span class="cmd">/investor-update</span>
+          <span class="cmd">/content-engine</span>
+          <span class="cmd">/outbound-engine</span>
+          <span class="cmd">/partner-launch</span>
+          <span class="cmd">/pricing-packaging-sprint</span>
+          <span class="cmd">/enablement-release</span>
+          <span class="cmd">/win-loss-program</span>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <div class="cta-panel">
+          <div class="glow-sm" aria-hidden="true"></div>
+          <div class="badge badge-signal" style="margin-bottom:1.25rem">Production ready</div>
+          <h2 class="display">Forge the next 500 skills. Run revenue with agents that remember.</h2>
+          <p style="margin:1rem 0 1.5rem; color:var(--fg-muted); max-width:36rem">Skill Forge expands domains to production quality. CI validates structure. The catalog stays searchable. Your GTM OS compounds.</p>
+          <div class="cta-row" style="margin-top:0">
+            <a class="btn btn-signal btn-lg" href="https://github.com/ObliviousOdin/obliviousodin-gtm-harness" target="_blank" rel="noreferrer">Open the repo →</a>
+            <a class="btn btn-outline btn-lg" href="https://github.com/ObliviousOdin/obliviousodin-gtm-harness/blob/main/AetherGTM/README.md" target="_blank" rel="noreferrer">Read the OS docs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="display" style="font-size:1.15rem; font-weight:600">AetherGTM</div>
+        <p>Odin’s ever-learning GTM agent harness — production skills, slash workflows, specialist agents, and permanent company context for any agentic coding environment.</p>
+        <div class="footer-meta">80 skills · 25 workflows · 6 agents · 11 domains</div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#coverage">Skills catalog</a>
+        <a href="#commands">Workflows</a>
+        <a href="#why">Architecture</a>
+        <a href="#start">Quick start</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="https://github.com/ObliviousOdin/obliviousodin-gtm-harness" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/ObliviousOdin/obliviousodin-gtm-harness/blob/main/AetherGTM/README.md" target="_blank" rel="noreferrer">Documentation</a>
+        <a href="https://github.com/ObliviousOdin/obliviousodin-gtm-harness/blob/main/LICENSE" target="_blank" rel="noreferrer">License</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>Branded for ObliviousOdin · Built for operators who ship</span>
+      <span>v2 production harness</span>
+    </div>
+  </footer>
+</body>
+</html>
